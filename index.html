@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kara Updates</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #f7f9fc; --surface: #ffffff; --sink: #eef3f9; --line: #e6eaf0;
+    --ink: #14161a; --ink55: #6a6f78;
+    --green: #01977c; --green-soft: #d6f2ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #101318; --surface: #171b22; --sink: #1e242d; --line: #262c36;
+      --ink: #edf0f5; --ink55: #98a0ab;
+      --green: #14b795; --green-soft: #123f36;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 52px 24px 80px; }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--green);
+  }
+  h1 { margin: 6px 0 8px; font-size: clamp(28px, 5vw, 38px); font-weight: 800; letter-spacing: -0.02em; }
+  .lede { margin: 0 0 14px; max-width: 62ch; font-size: 15.5px; color: var(--ink55); }
+  article { padding: 30px 0 26px; border-top: 1px solid var(--line); }
+  article:first-of-type { margin-top: 26px; }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .chip {
+    background: var(--green-soft); color: var(--green); border-radius: 999px;
+    padding: 3px 12px; font-family: ui-monospace, Menlo, monospace;
+    font-size: 12px; font-weight: 700;
+  }
+  .date { color: var(--ink55); font-size: 13px; }
+  h2 { margin: 12px 0 10px; font-size: 21.5px; font-weight: 800; line-height: 1.3; letter-spacing: -0.01em; }
+  .body { font-size: 15.5px; }
+  .body p { margin: 0 0 12px; }
+  .body ul { margin: 0 0 12px; padding-left: 22px; }
+  .body li { margin-bottom: 6px; }
+  .body a { color: var(--green); }
+  footer {
+    margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line);
+    font-family: ui-monospace, Menlo, monospace; font-size: 11.5px; color: var(--ink55);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Kara · release notes</div>
+    <h1>Kara Updates</h1>
+    <p class="lede">What shipped, newest first. Running apps offer each release themselves with a one-click "Update &amp; restart" dialog.</p>
+  </header>
+
+    <article>
+      <div class="meta">
+        <span class="chip">v0.2.16</span>
+        <span class="date">25 August 2026</span>
+      </div>
+      <h2>Every "+N more" now expands</h2>
+      <div class="body"><p>Truncated lists across the app behaved like dead text. They are now one shared control: a full-width "+N more" button with a chevron that expands the list in place, then collapses it with "Show less".</p>
+<ul><li><strong>Today screen</strong>: the Day agenda, the Tasks lane, and the diary's "Coming up" list all expand past their first six rows (Coming up previously truncated without even showing a count).</li><li><strong>Planner timeboxes</strong>: "+N more" inside a slot block is now a visible button that opens the slot window with the full task list. The block's height is its time range, so it opens rather than grows.</li><li><strong>Daily reset, "Pick the 3"</strong>: the from-active-projects list was silently capped at eight; it now shows "+N more" and expands.</li></ul></div>
+    </article>
+
+    <article>
+      <div class="meta">
+        <span class="chip">v0.2.15</span>
+        <span class="date">25 August 2026</span>
+      </div>
+      <h2>Dropping a task on a timebox now actually nests it</h2>
+      <div class="body"><p>The one that made timeboxing feel broken. Dropping a task onto a slot fired two handlers: the slot nested the task, then the same drop event reached the day column underneath, which pulled the task straight back out and planted it as a big standalone card at the mouse position. So tasks never stayed inside a timebox, no matter how precisely you dropped them.</p>
+<ul><li>Drops on a slot now stop at the slot: the task nests as a compact row inside the timebox, exactly like the design.</li><li>Standalone timed cards are now draggable: drag a stray card onto a slot to tuck it in, or elsewhere on the timeline to move it.</li><li>Double-clicking a slot no longer also creates a phantom new slot underneath it (same event-bubbling family).</li></ul>
+<p>This release also bundles two changes shipped in parallel:</p>
+<ul><li><strong>Day Surface diary.</strong> The Today screen's Day lane renders the sweep-authored day log: finished meetings appear as diary cards with recorder summary and Fathom/Granola deep links, plus one-tap triage of the tasks Kara caught.</li><li><strong>Cloud sync fix.</strong> The sync layer no longer records or tombstones data kinds it doesn't know, which was clobbering newly written dayLogs rows minutes after they were created.</li></ul></div>
+    </article>
+
+    <article>
+      <div class="meta">
+        <span class="chip">v0.2.14</span>
+        <span class="date">25 August 2026</span>
+      </div>
+      <h2>Your meetings become the day's diary</h2>
+      <div class="body"><p>The Today screen's Day lane now tells the story of your day, not just the plan. As recorded meetings finish, they appear as diary cards: the time, a short summary from Fathom or Granola, a chip that opens the recording, and the tasks Kara caught underneath.</p>
+<ul><li><strong>To validate, in one place.</strong> A green recap card at the top collects every task still waiting for your decision, from meetings and email alike. One tap each: approve to Inbox, edit, later, or reject. No double-clicks anywhere.</li><li><strong>Statuses stay live.</strong> Each caught task shows where it is right now: Approved, Filed with its project, Waiting on a person, Done, or Skipped. The diary resolves this from Todoist every time you open it, so it never goes stale.</li><li><strong>Past days are the record.</strong> Page back with the date arrows and you see what happened that day and where every task landed, plus your note to self.</li><li><strong>Cloud sync hardened.</strong> Older app versions were quietly deleting data kinds they did not recognise, which wiped fresh diary entries minutes after they were written. Every app now leaves unknown data alone, and the sweep re-writes the full day a few times a day as a safety net.</li></ul>
+<p>The same diary shipped on iPhone and iPad (TestFlight builds 15 to 17), where the iPad also got its new all-day hub layout. The data comes from the Kara sweep: zero extra tokens, one shared day log entity synced everywhere.</p></div>
+    </article>
+
+    <article>
+      <div class="meta">
+        <span class="chip">v0.2.13</span>
+        <span class="date">25 August 2026</span>
+      </div>
+      <h2>Planner fixes: slot tasks stay put, overlaps untangle, tasks open from anywhere</h2>
+      <div class="body"><p>Fixes from the first day of planning with 0.2.12.</p>
+<ul><li><strong>Tasks added to a slot no longer disappear.</strong> Two bugs compounded: tasks created inside a slot never reached Todoist (so the next sync deleted them), and every sync minted new internal ids for all tasks (so slots lost track of the tasks they held, and timed placements were wiped). Slot-created tasks now write through to Todoist with the slot's day as due date, and the sync keeps task identity stable, so slots and planned times survive every refresh.</li><li><strong>Overlapping cards untangle.</strong> Meetings and timed tasks that overlap in time now share the column side by side, calendar style, instead of stacking on top of each other.</li><li><strong>Every task on the timeline opens the task window.</strong> Click a task's title inside a slot block, in the slot detail, or on a timed card and the unified task window opens, with a new "Planned" row showing where the task sits and a "Back to day plan" button that decouples it from the slot or its time and returns it to the To plan tray.</li></ul></div>
+    </article>
+
+    <article>
+      <div class="meta">
+        <span class="chip">v0.2.12</span>
+        <span class="date">25 August 2026</span>
+      </div>
+      <h2>One task window everywhere, and meetings on the Plan-the-day timeline</h2>
+      <div class="body"><p>Two changes that make planning the day feel like one app instead of five screens.</p>
+<p><strong>One task window, everywhere.</strong> Click any task title, in any view (Today, Overview, Daily reset, Projects, Areas, Weekly Review, the planner) and the same task window opens. It now carries the three actions that used to be scattered across views:</p>
+<ul><li>Tick the circle to complete or reopen the task. Writes through to Todoist, so ticked tasks stay ticked after the next sync.</li><li>A "Top 3 today" toggle that works for any task, both directions. It updates the kara_top3 label in Todoist so the promotion survives every refresh.</li><li>A "Goal of the week" toggle that creates a This-Week goal with the task as its first step, linked to the task's project when it has one.</li></ul>
+<p><strong>Meetings on the Plan-the-day timeline.</strong> Google Calendar sync was already working, but the planner never read the events. The Daily reset's "Plan the day" step and the Overview Agenda tab now draw meetings as read-only blue blocks on the timeline, so the day can be planned around them. Declined invites and all-day events are skipped, and dragging tasks still works everywhere, even over a meeting block.</p></div>
+    </article>
+
+    <article>
+      <div class="meta">
+        <span class="chip">iPad build 17</span>
+        <span class="date">25 August 2026</span>
+      </div>
+      <h2>The iPad becomes an all-day hub</h2>
+      <div class="body"><p>Kara on iPad (via TestFlight) turns into a surface that can stay open all day.</p>
+<ul><li><strong>The hub</strong>: a NOW hero showing the current block, a day stream of what's next, and a personal rail alongside.</li><li><strong>Full Focus</strong>: the timer becomes a place of its own, full screen, built to sit on the desk while you work.</li></ul></div>
+    </article>
+
+    <article>
+      <div class="meta">
+        <span class="chip">v0.2.11</span>
+        <span class="date">17 August 2026</span>
+      </div>
+      <h2>One-click app updates from the Profile screen</h2>
+      <div class="body"><p>The Profile screen gained an "App update" card showing the current version with an "Update now" button. Pressing it fast-forwards the running checkout from GitHub and reloads the app in place. Web-layer changes apply immediately; only Rust-side changes still need an app restart.</p></div>
+    </article>
+
+    <article>
+      <div class="meta">
+        <span class="chip">v0.2.10</span>
+        <span class="date">17 August 2026</span>
+      </div>
+      <h2>Faster suggestion triage and a Waiting-For sync guard</h2>
+      <div class="body"><ul><li>The Suggested buffer got a one-action reject with an undo toast, plus a dedicated Feedback lane, so clearing a batch of suggestions takes seconds.</li><li>A sync guard stops the Waiting-For list from being overwritten by stale snapshots.</li><li>Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda.</li></ul></div>
+    </article>
+  <footer>generated from docs/updates in kara-desktop · 2026-08-25</footer>
+</div>
+</body>
+</html>
