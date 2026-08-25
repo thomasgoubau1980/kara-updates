@@ -11,12 +11,14 @@
     --paper: #f7f9fc; --surface: #ffffff; --sink: #eef3f9; --line: #e6eaf0;
     --ink: #14161a; --ink55: #6a6f78;
     --green: #01977c; --green-soft: #d6f2ea;
+    --blue: #2289e8; --blue-soft: #e4f1fe; --alert: #f2554c;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --paper: #101318; --surface: #171b22; --sink: #1e242d; --line: #262c36;
       --ink: #edf0f5; --ink55: #98a0ab;
       --green: #14b795; --green-soft: #123f36;
+      --blue: #4da3f0; --blue-soft: #16283b; --alert: #f4695f;
     }
   }
   * { box-sizing: border-box; }
@@ -48,6 +50,17 @@
   .body ul { margin: 0 0 12px; padding-left: 22px; }
   .body li { margin-bottom: 6px; }
   .body a { color: var(--green); }
+  .mockwrap { margin-top: 14px; }
+  .mockwrap .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  .mockwrap .mock {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 16px; overflow: hidden;
+  }
+  .mockwrap .try {
+    font-family: ui-monospace, Menlo, monospace; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink55);
+    margin: 14px 0 8px;
+  }
   footer {
     margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line);
     font-family: ui-monospace, Menlo, monospace; font-size: 11.5px; color: var(--ink55);
@@ -93,6 +106,30 @@
       <div class="body"><p>The Today screen's Day lane now tells the story of your day, not just the plan. As recorded meetings finish, they appear as diary cards: the time, a short summary from Fathom or Granola, a chip that opens the recording, and the tasks Kara caught underneath.</p>
 <ul><li><strong>To validate, in one place.</strong> A green recap card at the top collects every task still waiting for your decision, from meetings and email alike. One tap each: approve to Inbox, edit, later, or reject. No double-clicks anywhere.</li><li><strong>Statuses stay live.</strong> Each caught task shows where it is right now: Approved, Filed with its project, Waiting on a person, Done, or Skipped. The diary resolves this from Todoist every time you open it, so it never goes stale.</li><li><strong>Past days are the record.</strong> Page back with the date arrows and you see what happened that day and where every task landed, plus your note to self.</li><li><strong>Cloud sync hardened.</strong> Older app versions were quietly deleting data kinds they did not recognise, which wiped fresh diary entries minutes after they were written. Every app now leaves unknown data alone, and the sweep re-writes the full day a few times a day as a safety net.</li></ul>
 <p>The same diary shipped on iPhone and iPad (TestFlight builds 15 to 17), where the iPad also got its new all-day hub layout. The data comes from the Kara sweep: zero extra tokens, one shared day log entity synced everywhere.</p></div>
+      <div class="mockwrap"><p class="try">A finished meeting, as the diary tells it</p>
+<div class="mock" style="padding: 16px 18px">
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
+    <span style="font-size: 14px; font-weight: 800; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><span class="mono" style="font-size: 10px; color: var(--ink55); font-weight: 700">09:30</span>&nbsp; Schréder ↔ Q7Leader — 1:1</span>
+    <span class="mono" style="flex-shrink: 0; font-size: 9.5px; font-weight: 700; background: var(--blue-soft); color: var(--blue); border-radius: 999px; padding: 3px 9px">Fathom ↗</span>
+  </div>
+  <p style="margin: 7px 0 10px; font-size: 12px; line-height: 1.5; color: var(--ink55)">Aligned with Claudia on the year-end performance cycle: Q7Leader hosts the global-score comparison. Claudia needs the compliance pack before Friday.</p>
+  <div class="mono" style="font-size: 9px; font-weight: 700; color: var(--ink55); letter-spacing: 0.08em">CAME OUT OF THIS MEETING · 3</div>
+  <div style="display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line)">
+    <span style="flex: 1; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Préparer la revue CPD score pour vendredi</span>
+    <span style="width: 22px; height: 22px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: 11px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0">✓</span>
+    <span style="width: 22px; height: 22px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink55); font-size: 10px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0">⏰</span>
+    <span style="width: 22px; height: 22px; border-radius: 999px; border: 1px solid var(--alert); color: var(--alert); font-size: 10px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0">✕</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line)">
+    <span style="flex: 1; font-size: 12px; font-weight: 600; color: var(--ink55); text-decoration: line-through; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Envoyer le compliance pack à Claudia</span>
+    <span style="flex-shrink: 0; font-size: 10px; font-weight: 700; background: var(--green-soft); color: var(--green); border-radius: 999px; padding: 3px 9px">✓ Approved → Inbox</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 8px; padding: 8px 0">
+    <span style="flex: 1; font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Confirmer l'accès RDP sandbox</span>
+    <span style="flex-shrink: 0; font-size: 10px; font-weight: 700; background: var(--blue-soft); color: var(--blue); border-radius: 999px; padding: 3px 9px">⏳ Waiting · Stijn</span>
+  </div>
+</div>
+</div>
     </article>
 
     <article>
@@ -119,12 +156,67 @@
 
     <article>
       <div class="meta">
-        <span class="chip">iPad build 17</span>
+        <span class="chip">iPad builds 17-18</span>
         <span class="date">25 August 2026</span>
       </div>
       <h2>The iPad becomes an all-day hub</h2>
-      <div class="body"><p>Kara on iPad (via TestFlight) turns into a surface that can stay open all day.</p>
-<ul><li><strong>The hub</strong>: a NOW hero showing the current block, a day stream of what's next, and a personal rail alongside.</li><li><strong>Full Focus</strong>: the timer becomes a place of its own, full screen, built to sit on the desk while you work.</li></ul></div>
+      <div class="body"><p>Kara on iPad (via TestFlight) turns into a surface that can stay open all day. The day itself is the wide column, your personal layer sits in a fixed rail, and one button drops you into full focus.</p>
+<ul><li><strong>The NOW hero</strong> always answers one question: what is now? In a meeting it shows the meeting and what comes next; between meetings, the next thing with a countdown; on a clear day, your first open Top 3 task.</li><li><strong>The day stream</strong>: date header, hero, agenda, then the diary of finished meetings with their recording links and the tasks Kara caught, one tap each to approve, defer or reject.</li><li><strong>The personal rail never moves</strong>: goals of the week with tick-through (build 18 swapped these in for the duplicate Top 3, which already lives in the day column), your ruled note to self, and the Pencil sketch.</li><li><strong>Full Focus</strong>: the Focus button starts a pomodoro on your top open task and takes over the screen. The ring, the one task, pause and "Done, tick it off" writing through to Todoist, with a quiet footer naming what is next.</li><li><strong>Also in these builds</strong>: the Day Surface diary on iPhone and iPad, and the cloud-sync guard that stops older builds from deleting diary data. If the diary looks empty right after updating, it fills in at the next Kara sweep.</li></ul></div>
+      <div class="mockwrap"><p class="try">The hub: NOW hero, day stream, personal rail</p>
+<div class="mock" style="padding: 14px">
+  <div style="display: flex; gap: 10px">
+    <div style="flex: 1.6; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+      <div style="background: #14161a; border-radius: 12px; padding: 10px 12px; display: flex; align-items: center; gap: 10px">
+        <div style="flex: 1; min-width: 0">
+          <div class="mono" style="font-size: 8.5px; font-weight: 700; color: #3bf2d1; letter-spacing: 0.08em">NOW · 14:00 – 14:45</div>
+          <div style="font-size: 12px; font-weight: 800; color: #f7f9fc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Euroports — coordination</div>
+        </div>
+        <span style="flex-shrink: 0; background: var(--green); color: #fff; border-radius: 999px; padding: 5px 11px; font-size: 10px; font-weight: 700">◎ Focus</span>
+      </div>
+      <div style="border: 1.5px solid var(--green); border-radius: 12px; padding: 8px 11px">
+        <div class="mono" style="font-size: 8.5px; font-weight: 700; color: var(--green); letter-spacing: 0.08em">TO VALIDATE · 3</div>
+        <div style="display: flex; align-items: center; gap: 7px; margin-top: 5px">
+          <span style="flex: 1; font-size: 10.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Préparer la revue CPD score</span>
+          <span style="width: 17px; height: 17px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: 9px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center">✓</span>
+          <span style="width: 17px; height: 17px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink55); font-size: 8px; display: inline-flex; align-items: center; justify-content: center">⏰</span>
+          <span style="width: 17px; height: 17px; border-radius: 999px; border: 1px solid var(--alert); color: var(--alert); font-size: 8px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center">✕</span>
+        </div>
+      </div>
+      <div style="border: 1px solid var(--line); border-radius: 12px; padding: 8px 11px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+          <span style="font-size: 11px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis"><span class="mono" style="font-size: 8.5px; color: var(--ink55)">09:30</span> Schréder — 1:1</span>
+          <span class="mono" style="flex-shrink: 0; font-size: 8px; font-weight: 700; background: var(--blue-soft); color: var(--blue); border-radius: 999px; padding: 2px 7px">Fathom ↗</span>
+        </div>
+        <div style="font-size: 9.5px; color: var(--ink55); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Aligned with Claudia on the year-end cycle…</div>
+      </div>
+    </div>
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+      <div style="border: 1px solid var(--line); border-radius: 12px; padding: 8px 11px">
+        <div class="mono" style="font-size: 8.5px; font-weight: 700; color: var(--ink55); letter-spacing: 0.08em">GOALS OF THE WEEK</div>
+        <div style="display: flex; align-items: center; gap: 6px; margin-top: 5px"><span style="width: 12px; height: 12px; border-radius: 999px; background: var(--green); flex-shrink: 0"></span><span style="font-size: 10px; font-weight: 600; color: var(--ink55); text-decoration: line-through; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Close the f&amp;i tranche</span></div>
+        <div style="display: flex; align-items: center; gap: 6px; margin-top: 4px"><span style="width: 12px; height: 12px; border-radius: 999px; border: 1.5px solid var(--line); flex-shrink: 0"></span><span style="font-size: 10px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Ship the Afflelou scan</span></div>
+        <div style="display: flex; align-items: center; gap: 6px; margin-top: 4px"><span style="width: 12px; height: 12px; border-radius: 999px; border: 1.5px solid var(--line); flex-shrink: 0"></span><span style="font-size: 10px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Diary live everywhere</span></div>
+      </div>
+      <div style="flex: 1; border: 1px solid var(--line); border-radius: 12px; padding: 8px 11px; background: repeating-linear-gradient(var(--surface) 0 14px, var(--sink) 14px 15px)">
+        <div class="mono" style="font-size: 8.5px; font-weight: 700; color: var(--ink55); letter-spacing: 0.08em">NOTE TO SELF</div>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="try">Full Focus: the timer becomes a place</p>
+<div class="mock" style="background: #14161a; border: none; padding: 18px; display: flex; align-items: center; gap: 16px">
+  <svg width="64" height="64" viewBox="0 0 64 64" style="flex-shrink: 0">
+    <circle cx="32" cy="32" r="27" fill="none" stroke="rgba(247,249,252,0.12)" stroke-width="5"></circle>
+    <circle cx="32" cy="32" r="27" fill="none" stroke="#01977c" stroke-width="5" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="55" transform="rotate(-90 32 32)"></circle>
+  </svg>
+  <div style="min-width: 0">
+    <div class="mono" style="font-size: 22px; font-weight: 700; color: #f7f9fc">17:24</div>
+    <div style="font-size: 11px; font-weight: 700; color: rgba(247,249,252,0.85); white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Afflelou expectation scan — first draft</div>
+    <div class="mono" style="font-size: 8.5px; font-weight: 700; color: rgba(247,249,252,0.4); margin-top: 2px">NEXT · 18:30 PADEL</div>
+  </div>
+  <span style="margin-left: auto; flex-shrink: 0; background: var(--green); color: #fff; border-radius: 999px; padding: 7px 13px; font-size: 10.5px; font-weight: 700">✓ Done</span>
+</div>
+</div>
     </article>
 
     <article>
