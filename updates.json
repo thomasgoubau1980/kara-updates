@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-08-26T03:43:16.911Z",
+  "generatedAt": "2026-08-26T03:48:29.150Z",
   "entries": [
+    {
+      "id": "2026-08-26-ipad-build-19",
+      "version": "iPhone & iPad build 19",
+      "date": "2026-08-26",
+      "platform": "ios",
+      "title": "Release notes live inside the iOS app too",
+      "body": "Same day as the desktop version: updates now have a home inside Kara on iPhone and iPad.\n\n- **Profile gets an Updates card**: your version and build, the latest release's title, and a green dot when something new landed since you last looked.\n- **iPhone**: the Updates screen is a feed of cards with a Desktop / iPad & iPhone filter; the newest entry opens expanded and any card expands in place.\n- **iPad**: the same screen becomes master-detail: releases on the left, the selected entry's full notes on the right.\n- Works offline from the last fetched feed, and everything reads the same published notes as [the public updates page](https://thomasgoubau1980.github.io/kara-updates/)."
+    },
     {
       "id": "2026-08-26-v0.2.17",
       "version": "0.2.17",
