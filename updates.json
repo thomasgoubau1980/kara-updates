@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-08-26T03:37:22.752Z",
+  "entries": [
+    {
+      "id": "2026-08-25-ipad-build-17",
+      "version": "iPad builds 17-18",
+      "date": "2026-08-25",
+      "platform": "ios",
+      "title": "The iPad becomes an all-day hub",
+      "body": "Kara on iPad (via TestFlight) turns into a surface that can stay open all day. The day itself is the wide column, your personal layer sits in a fixed rail, and one button drops you into full focus.\n\n- **The NOW hero** always answers one question: what is now? In a meeting it shows the meeting and what comes next; between meetings, the next thing with a countdown; on a clear day, your first open Top 3 task.\n- **The day stream**: date header, hero, agenda, then the diary of finished meetings with their recording links and the tasks Kara caught, one tap each to approve, defer or reject.\n- **The personal rail never moves**: goals of the week with tick-through (build 18 swapped these in for the duplicate Top 3, which already lives in the day column), your ruled note to self, and the Pencil sketch.\n- **Full Focus**: the Focus button starts a pomodoro on your top open task and takes over the screen. The ring, the one task, pause and \"Done, tick it off\" writing through to Todoist, with a quiet footer naming what is next.\n- **Also in these builds**: the Day Surface diary on iPhone and iPad, and the cloud-sync guard that stops older builds from deleting diary data. If the diary looks empty right after updating, it fills in at the next Kara sweep."
+    },
+    {
+      "id": "2026-08-25-v0.2.16",
+      "version": "0.2.16",
+      "date": "2026-08-25",
+      "platform": "desktop",
+      "title": "Every \"+N more\" now expands",
+      "body": "Truncated lists across the app behaved like dead text. They are now one shared control: a full-width \"+N more\" button with a chevron that expands the list in place, then collapses it with \"Show less\".\n\n- **Today screen**: the Day agenda, the Tasks lane, and the diary's \"Coming up\" list all expand past their first six rows (Coming up previously truncated without even showing a count).\n- **Planner timeboxes**: \"+N more\" inside a slot block is now a visible button that opens the slot window with the full task list. The block's height is its time range, so it opens rather than grows.\n- **Daily reset, \"Pick the 3\"**: the from-active-projects list was silently capped at eight; it now shows \"+N more\" and expands."
+    },
+    {
+      "id": "2026-08-25-v0.2.15",
+      "version": "0.2.15",
+      "date": "2026-08-25",
+      "platform": "desktop",
+      "title": "Dropping a task on a timebox now actually nests it",
+      "body": "The one that made timeboxing feel broken. Dropping a task onto a slot fired two handlers: the slot nested the task, then the same drop event reached the day column underneath, which pulled the task straight back out and planted it as a big standalone card at the mouse position. So tasks never stayed inside a timebox, no matter how precisely you dropped them.\n\n- Drops on a slot now stop at the slot: the task nests as a compact row inside the timebox, exactly like the design.\n- Standalone timed cards are now draggable: drag a stray card onto a slot to tuck it in, or elsewhere on the timeline to move it.\n- Double-clicking a slot no longer also creates a phantom new slot underneath it (same event-bubbling family).\n\nThis release also bundles two changes shipped in parallel:\n\n- **Day Surface diary.** The Today screen's Day lane renders the sweep-authored day log: finished meetings appear as diary cards with recorder summary and Fathom/Granola deep links, plus one-tap triage of the tasks Kara caught.\n- **Cloud sync fix.** The sync layer no longer records or tombstones data kinds it doesn't know, which was clobbering newly written dayLogs rows minutes after they were created."
+    },
+    {
+      "id": "2026-08-25-v0.2.14",
+      "version": "0.2.14",
+      "date": "2026-08-25",
+      "platform": "desktop",
+      "title": "Your meetings become the day's diary",
+      "body": "The Today screen's Day lane now tells the story of your day, not just the plan. As recorded meetings finish, they appear as diary cards: the time, a short summary from Fathom or Granola, a chip that opens the recording, and the tasks Kara caught underneath.\n\n- **To validate, in one place.** A green recap card at the top collects every task still waiting for your decision, from meetings and email alike. One tap each: approve to Inbox, edit, later, or reject. No double-clicks anywhere.\n- **Statuses stay live.** Each caught task shows where it is right now: Approved, Filed with its project, Waiting on a person, Done, or Skipped. The diary resolves this from Todoist every time you open it, so it never goes stale.\n- **Past days are the record.** Page back with the date arrows and you see what happened that day and where every task landed, plus your note to self.\n- **Cloud sync hardened.** Older app versions were quietly deleting data kinds they did not recognise, which wiped fresh diary entries minutes after they were written. Every app now leaves unknown data alone, and the sweep re-writes the full day a few times a day as a safety net.\n\nThe same diary shipped on iPhone and iPad (TestFlight builds 15 to 17), where the iPad also got its new all-day hub layout. The data comes from the Kara sweep: zero extra tokens, one shared day log entity synced everywhere."
+    },
+    {
+      "id": "2026-08-25-v0.2.13",
+      "version": "0.2.13",
+      "date": "2026-08-25",
+      "platform": "desktop",
+      "title": "Planner fixes: slot tasks stay put, overlaps untangle, tasks open from anywhere",
+      "body": "Fixes from the first day of planning with 0.2.12.\n\n- **Tasks added to a slot no longer disappear.** Two bugs compounded: tasks created inside a slot never reached Todoist (so the next sync deleted them), and every sync minted new internal ids for all tasks (so slots lost track of the tasks they held, and timed placements were wiped). Slot-created tasks now write through to Todoist with the slot's day as due date, and the sync keeps task identity stable, so slots and planned times survive every refresh.\n- **Overlapping cards untangle.** Meetings and timed tasks that overlap in time now share the column side by side, calendar style, instead of stacking on top of each other.\n- **Every task on the timeline opens the task window.** Click a task's title inside a slot block, in the slot detail, or on a timed card and the unified task window opens, with a new \"Planned\" row showing where the task sits and a \"Back to day plan\" button that decouples it from the slot or its time and returns it to the To plan tray."
+    },
+    {
+      "id": "2026-08-25-v0.2.12",
+      "version": "0.2.12",
+      "date": "2026-08-25",
+      "platform": "desktop",
+      "title": "One task window everywhere, and meetings on the Plan-the-day timeline",
+      "body": "Two changes that make planning the day feel like one app instead of five screens.\n\n**One task window, everywhere.** Click any task title, in any view (Today, Overview, Daily reset, Projects, Areas, Weekly Review, the planner) and the same task window opens. It now carries the three actions that used to be scattered across views:\n\n- Tick the circle to complete or reopen the task. Writes through to Todoist, so ticked tasks stay ticked after the next sync.\n- A \"Top 3 today\" toggle that works for any task, both directions. It updates the kara_top3 label in Todoist so the promotion survives every refresh.\n- A \"Goal of the week\" toggle that creates a This-Week goal with the task as its first step, linked to the task's project when it has one.\n\n**Meetings on the Plan-the-day timeline.** Google Calendar sync was already working, but the planner never read the events. The Daily reset's \"Plan the day\" step and the Overview Agenda tab now draw meetings as read-only blue blocks on the timeline, so the day can be planned around them. Declined invites and all-day events are skipped, and dragging tasks still works everywhere, even over a meeting block."
+    },
+    {
+      "id": "2026-08-17-v0.2.11",
+      "version": "0.2.11",
+      "date": "2026-08-17",
+      "platform": "desktop",
+      "title": "One-click app updates from the Profile screen",
+      "body": "The Profile screen gained an \"App update\" card showing the current version with an \"Update now\" button. Pressing it fast-forwards the running checkout from GitHub and reloads the app in place. Web-layer changes apply immediately; only Rust-side changes still need an app restart."
+    },
+    {
+      "id": "2026-08-17-v0.2.10",
+      "version": "0.2.10",
+      "date": "2026-08-17",
+      "platform": "desktop",
+      "title": "Faster suggestion triage and a Waiting-For sync guard",
+      "body": "- The Suggested buffer got a one-action reject with an undo toast, plus a dedicated Feedback lane, so clearing a batch of suggestions takes seconds.\n- A sync guard stops the Waiting-For list from being overwritten by stale snapshots.\n- Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda."
+    }
+  ]
+}
