@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-08-26T03:37:22.752Z",
+  "generatedAt": "2026-08-26T03:43:16.911Z",
   "entries": [
+    {
+      "id": "2026-08-26-v0.2.17",
+      "version": "0.2.17",
+      "date": "2026-08-26",
+      "platform": "desktop",
+      "title": "Release notes live inside the app",
+      "body": "Updates now have a home under Profile, so you can see what changed without leaving Kara.\n\n- **A new Updates page** (Profile, then \"See all updates\"): every release with its notes, a Desktop / iPad & iPhone filter, and a status strip showing your version with \"Check now\" and \"Update & restart\" right there.\n- **The Profile card got smarter.** The old \"App update\" card became an Updates card: up-to-date status, the two latest releases as tappable rows, and a green dot for anything you have not seen yet. The same dot appears on Profile in the sidebar.\n- **One feed everywhere.** The page reads the same published feed as [the public updates page](https://thomasgoubau1980.github.io/kara-updates/), cached for offline. The iPhone and iPad apps are getting the same screen."
+    },
     {
       "id": "2026-08-25-ipad-build-17",
       "version": "iPad builds 17-18",
