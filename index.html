@@ -163,7 +163,7 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.2.19</span>
+      <span class="chip">latest: v0.2.20</span>
       <span class="chip chip-blue">iPhone &amp; iPad build 21</span>
       <span>Released 11 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
@@ -173,6 +173,15 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.2.20 · 11 SEP</span></div>
+    <h2>Connect Google Calendar actually opens the browser now</h2>
+    <p class="sec-sub">v0.2.19 removed the configuration error but the Connect button then failed silently: the app never asked the system for permission to start its local sign-in listener, and the resulting refusal was swallowed instead of shown. Both fixed.</p>
+    
+    <div class="notes"><div class="note"><b>Connect works end to end.</b><span>Profile → Connect Google Calendar opens your browser on Google's consent screen; approve once and meetings flow into Today and the planner.</span></div>
+<div class="note"><b>No more silent failures.</b><span>If anything in the sign-in path goes wrong from now on, the exact reason appears in red under the button instead of nothing happening.</span></div></div>
+  </section>
 
   <section data-platform="desktop">
     <div class="sec-head"><span class="sec-num mono">V0.2.19 · 11 SEP</span></div>
