@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-09-11T09:50:30.211Z",
+  "generatedAt": "2026-09-11T10:42:36.951Z",
   "entries": [
+    {
+      "id": "2026-09-11-v0.2.21",
+      "version": "0.2.21",
+      "date": "2026-09-11",
+      "platform": "desktop",
+      "title": "Choose which calendars Kara shows",
+      "body": "Now that Google Calendar connects on the desktop, it also respects which calendars you actually want in your day, the same choice your iPhone already knows.\n\n- **Pick your calendars.** Profile → Google Calendar now lists every calendar on the account with a checkbox and its colour. Untick the noise; Kara fetches and shows only what you keep.\n- **One choice, every device.** The selection is the same synced setting the iPhone uses, so ticking a calendar on the Mac updates the iPad and iPhone too, and your existing iOS choices apply on the desktop immediately.\n- **All-on by default.** A fresh connection shows everything until you say otherwise, matching iOS."
+    },
     {
       "id": "2026-09-11-v0.2.20",
       "version": "0.2.20",
