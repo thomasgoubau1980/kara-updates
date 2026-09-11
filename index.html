@@ -163,9 +163,9 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.2.18</span>
+      <span class="chip">latest: v0.2.19</span>
       <span class="chip chip-blue">iPhone &amp; iPad build 21</span>
-      <span>Released 9 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
+      <span>Released 11 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
     <div class="filter" role="radiogroup" aria-label="Release type">
       <label><input type="radio" name="platform" value="all" checked><span>All</span></label>
@@ -173,6 +173,15 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.2.19 · 11 SEP</span></div>
+    <h2>Google Calendar connects on the desktop now</h2>
+    <p class="sec-sub">The Connect Google Calendar button on the desktop stopped at "Add the Google Desktop OAuth client ID and secret" since the sync shipped in August. That gap is closed: the app now carries its own Google Desktop client (same Google project as the iPhone's, so the consent screen and Calendar access were already proven there).</p>
+    
+    <div class="notes"><div class="note"><b>To connect:</b><span>Profile → Connect Google Calendar. Your browser opens Google's consent screen once; approve, and meetings flow into the Today day stream and the planner, with declined invites and all-day events filtered as on iOS.</span></div>
+<div class="note"><b>Two-way stays two-way.</b><span>Slots and timed tasks you place in Kara still write back to your calendar.</span></div></div>
+  </section>
 
   <section data-platform="ios">
     <div class="sec-head"><span class="sec-num mono">IPHONE &amp; IPAD BUILD 21 · 9 SEP</span></div>
@@ -656,7 +665,7 @@
 <div class="note"><span>A sync guard stops the Waiting-For list from being overwritten by stale snapshots.</span></div>
 <div class="note"><span>Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda.</span></div></div>
   </section>
-  <footer>generated from docs/updates in kara-desktop · 2026-09-09</footer>
+  <footer>generated from docs/updates in kara-desktop · 2026-09-11</footer>
 </div>
 <script>
 (function () {
