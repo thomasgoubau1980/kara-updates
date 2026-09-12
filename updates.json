@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-09-11T10:43:01.176Z",
+  "generatedAt": "2026-09-12T07:41:54.803Z",
   "entries": [
+    {
+      "id": "2026-09-12-ios-build-22",
+      "version": "iPhone & iPad build 22",
+      "date": "2026-09-12",
+      "platform": "ios",
+      "title": "Today and Inbox now travel together",
+      "body": "The approved Today and Inbox direction is now available on iPhone and iPad.\n\n![Inbox on iPhone, with work kind, destination, timing, and File & Next](assets/inbox-iphone.png)\n\n- **Today has Morning, Active day, and Closing** on one surface, with a dedicated moment control.\n- **iPhone gets a proper top-left menu** for the main Kara navigation.\n- **Inbox becomes a direct decision flow** with work kind, project or area, timing, editing, completion, and File & Next.\n- **Native phone swipes speed up cleanup:** timing on the left; file, defer, and delete on the right.\n- **Closing shows the Inbox count** and opens it directly, so the remaining cleanup is always visible.\n\n![Inbox on iPad keeps the queue and current decision together](assets/inbox-ipad.png)"
+    },
+    {
+      "id": "2026-09-12-v0.2.22",
+      "version": "0.2.22",
+      "date": "2026-09-12",
+      "platform": "desktop",
+      "title": "Today and Inbox become one coherent daily flow",
+      "body": "Today now carries the working day from planning to execution to a clean close, while Inbox has become a fast, focused clarification queue.\n\n![Today on desktop, with priorities and the real-scale morning agenda](assets/today-desktop.png)\n\n- **One Today, three useful moments.** Morning chooses priorities and lays the day out at real scale. Active day runs the agenda and collects newly added tasks in Unplaced today. Closing gives every open loop a destination and links directly to the current Inbox count.\n- **A real Inbox workspace.** Keep the queue beside the current item on desktop and iPad. Confirm Focus, Admin, Reference, or None; choose any project or area; set timing; edit; complete; or use File & Next to move directly to the next item.\n- **Phone navigation that has a clear home.** A top-left menu opens Kara's main destinations. The bottom bar is reserved for Morning, Active, and Closing inside Today.\n- **Consistent task behavior.** Tasks use the same completion, editing, placement, and overflow patterns across Today and Inbox.\n- **Capture lands somewhere visible.** Today captures enter the unplaced tray, while Inbox captures join the clarification queue.\n\n![Inbox on iPad, with the queue beside the current decision](assets/inbox-ipad.png)\n\n![Inbox on iPhone, with the full decision and File & Next action](assets/inbox-iphone.png)\n\nCalendar remains the owner of meeting times. Kara can open a meeting's agenda or skip it without changing the calendar event."
+    },
     {
       "id": "2026-09-11-v0.2.21",
       "version": "0.2.21",

@@ -163,9 +163,9 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.2.21</span>
-      <span class="chip chip-blue">iPhone &amp; iPad build 21</span>
-      <span>Released 11 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
+      <span class="chip">latest: v0.2.22</span>
+      <span class="chip chip-blue">iPhone &amp; iPad build 22</span>
+      <span>Released 12 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
     <div class="filter" role="radiogroup" aria-label="Release type">
       <label><input type="radio" name="platform" value="all" checked><span>All</span></label>
@@ -173,6 +173,34 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="ios">
+    <div class="sec-head"><span class="sec-num mono">IPHONE &amp; IPAD BUILD 22 · 12 SEP</span></div>
+    <h2>Today and Inbox now travel together</h2>
+    <p class="sec-sub">The approved Today and Inbox direction is now available on iPhone and iPad.</p>
+    <p>![Inbox on iPhone, with work kind, destination, timing, and File &amp; Next](assets/inbox-iphone.png)</p>
+<p>![Inbox on iPad keeps the queue and current decision together](assets/inbox-ipad.png)</p>
+    <div class="notes"><div class="note"><b>Today has Morning, Active day, and Closing</b><span>on one surface, with a dedicated moment control.</span></div>
+<div class="note"><b>iPhone gets a proper top-left menu</b><span>for the main Kara navigation.</span></div>
+<div class="note"><b>Inbox becomes a direct decision flow</b><span>with work kind, project or area, timing, editing, completion, and File &amp; Next.</span></div>
+<div class="note"><b>Native phone swipes speed up cleanup:</b><span>timing on the left; file, defer, and delete on the right.</span></div>
+<div class="note"><b>Closing shows the Inbox count</b><span>and opens it directly, so the remaining cleanup is always visible.</span></div></div>
+  </section>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.2.22 · 12 SEP</span></div>
+    <h2>Today and Inbox become one coherent daily flow</h2>
+    <p class="sec-sub">Today now carries the working day from planning to execution to a clean close, while Inbox has become a fast, focused clarification queue.</p>
+    <p>![Today on desktop, with priorities and the real-scale morning agenda](assets/today-desktop.png)</p>
+<p>![Inbox on iPad, with the queue beside the current decision](assets/inbox-ipad.png)</p>
+<p>![Inbox on iPhone, with the full decision and File &amp; Next action](assets/inbox-iphone.png)</p>
+<p>Calendar remains the owner of meeting times. Kara can open a meeting's agenda or skip it without changing the calendar event.</p>
+    <div class="notes"><div class="note"><b>One Today, three useful moments.</b><span>Morning chooses priorities and lays the day out at real scale. Active day runs the agenda and collects newly added tasks in Unplaced today. Closing gives every open loop a destination and links directly to the current Inbox count.</span></div>
+<div class="note"><b>A real Inbox workspace.</b><span>Keep the queue beside the current item on desktop and iPad. Confirm Focus, Admin, Reference, or None; choose any project or area; set timing; edit; complete; or use File &amp; Next to move directly to the next item.</span></div>
+<div class="note"><b>Phone navigation that has a clear home.</b><span>A top-left menu opens Kara's main destinations. The bottom bar is reserved for Morning, Active, and Closing inside Today.</span></div>
+<div class="note"><b>Consistent task behavior.</b><span>Tasks use the same completion, editing, placement, and overflow patterns across Today and Inbox.</span></div>
+<div class="note"><b>Capture lands somewhere visible.</b><span>Today captures enter the unplaced tray, while Inbox captures join the clarification queue.</span></div></div>
+  </section>
 
   <section data-platform="desktop">
     <div class="sec-head"><span class="sec-num mono">V0.2.21 · 11 SEP</span></div>
@@ -684,7 +712,7 @@
 <div class="note"><span>A sync guard stops the Waiting-For list from being overwritten by stale snapshots.</span></div>
 <div class="note"><span>Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda.</span></div></div>
   </section>
-  <footer>generated from docs/updates in kara-desktop · 2026-09-11</footer>
+  <footer>generated from docs/updates in kara-desktop · 2026-09-12</footer>
 </div>
 <script>
 (function () {
