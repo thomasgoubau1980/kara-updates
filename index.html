@@ -163,9 +163,9 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.2.22</span>
+      <span class="chip">latest: v0.2.24</span>
       <span class="chip chip-blue">iPhone &amp; iPad build 22</span>
-      <span>Released 12 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
+      <span>Released 14 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
     <div class="filter" role="radiogroup" aria-label="Release type">
       <label><input type="radio" name="platform" value="all" checked><span>All</span></label>
@@ -173,6 +173,15 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.2.24 · 14 SEP</span></div>
+    <h2>The white screen on launch is fixed</h2>
+    <p class="sec-sub">Kara 0.2.22 and 0.2.23 could freeze into a blank white window on launch. The new "Place in block" button on Today's backlog read the day's blocks in a way that made the app re-render itself forever, and the whole screen went white before anything appeared.</p>
+    <p>If your Mac is showing the white screen: quit Kara, reopen it, and accept the update dialog when it appears. The updater runs even while the window is blank.</p>
+    <div class="notes"><div class="note"><b>Launch works again.</b><span>The render loop is fixed and verified against a real, fully loaded workspace.</span></div>
+<div class="note"><b>Your data was never at risk.</b><span>Tasks, projects, day logs and settings were all intact the whole time; only the display was stuck.</span></div></div>
+  </section>
 
   <section data-platform="ios">
     <div class="sec-head"><span class="sec-num mono">IPHONE &amp; IPAD BUILD 22 · 12 SEP</span></div>
@@ -712,7 +721,7 @@
 <div class="note"><span>A sync guard stops the Waiting-For list from being overwritten by stale snapshots.</span></div>
 <div class="note"><span>Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda.</span></div></div>
   </section>
-  <footer>generated from docs/updates in kara-desktop · 2026-09-13</footer>
+  <footer>generated from docs/updates in kara-desktop · 2026-09-14</footer>
 </div>
 <script>
 (function () {
