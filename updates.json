@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-09-14T06:54:18.601Z",
+  "generatedAt": "2026-09-17T19:03:04.586Z",
   "entries": [
+    {
+      "id": "2026-09-17-gtd-workflow-v2",
+      "version": "GTD workflow v2",
+      "date": "2026-09-17",
+      "platform": "ios",
+      "title": "One system, four parts, Akiflow joins for planning",
+      "body": "The way Kara organises your day changed shape. Instead of one app trying to do everything, four parts now share the work, each doing what it is best at.\n\n- **Todoist captures everything.** Quick adds, forwarded mail, and the sweep's suggestions all land in one inbox. Messy is fine.\n- **The agent cleans up behind you.** Every inbox task gets a summary of its links, a focus or admin tag, a key nomination when it truly matters, and a proposed project, refreshed hourly through the working day.\n- **Akiflow plans the week and the day.** The morning ritual picks your top 3 goals, clears the inbox, and blocks the day; blocks land on your Google Calendar.\n- **The Kara app runs the day.** Meetings, the tasks they produce, and your plan in one view. Its scope is now deliberately narrow and stable.\n\nThe full routine, tag rules, and time-block guidance are in the updated user guide.\n\n<!-- screenshot: Akiflow daily planning with goals picked and a Focus block, next to the Kara app Today view -->"
+    },
     {
       "id": "2026-09-14-v0.2.24",
       "version": "0.2.24",
