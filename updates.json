@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-09-17T19:03:04.586Z",
+  "generatedAt": "2026-09-20T20:20:23.863Z",
   "entries": [
+    {
+      "id": "2026-09-20-v0.3.0",
+      "version": "0.3.0",
+      "date": "2026-09-20",
+      "platform": "desktop",
+      "title": "Kara is now your day companion: one lane for the day, one tap to triage",
+      "body": "Kara slimmed down to the four things you actually touch during the day. Everything about planning moved to Akiflow, everything about filing lives in Todoist, and what remains got much better at its one job.\n\n- **Today is one lane.** Your focus and admin blocks (planned in Akiflow, arriving via Google Calendar), your meetings and the NOW line, in time order. No more Morning/Active/Closing switcher, no planning builder.\n- **Meetings carry their aftermath.** When a meeting ends, its summary and the tasks Kara pulled out of it appear under the meeting card, each with a Focus or Admin chip and Kara's proposed project.\n- **Triage is three verbs.** Keep sends a task to Todoist (Akiflow plans it tomorrow morning), Reject closes it with an undo, Reference files it to the Library. Kara no longer asks when; that question is answered once, in your morning planning. Decisions made offline apply exactly once when you're back.\n- **Notes live next to the day.** A notes rail on Today keeps the day's scribbles, syncs across devices, and comes back in Closing.\n- **Close the day walks every open loop.** Today's priorities, kept meeting actions and everything else each get Done, Tomorrow, or Plan later, plus a note for tomorrow that opens the next morning's Today.\n- **Removed on purpose:** Overview, Projects & Areas, Daily Review, Weekly Review and the planning surfaces. Akiflow and Todoist own those jobs now; the user guide explains the full flow.\n\n<!-- screenshot: Today on desktop, with the ended-meeting card showing its summary and suggested tasks with chips, notes rail on the right -->\n<!-- screenshot: Close the day, full screen, with the three sections and Done / Tomorrow / Plan later on an open row -->"
+    },
     {
       "id": "2026-09-17-gtd-workflow-v2",
       "version": "GTD workflow v2",
