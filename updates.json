@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-09-20T20:20:23.863Z",
+  "generatedAt": "2026-09-21T18:39:49.631Z",
   "entries": [
+    {
+      "id": "2026-09-21-ios-build-24",
+      "version": "iPhone & iPad build 24",
+      "date": "2026-09-21",
+      "platform": "ios",
+      "title": "The Day Companion arrives on iPhone and iPad",
+      "body": "The mobile app now matches desktop v0.3.0: four surfaces, one question per decision.\n\n- **The menu is four items.** Today, Triage, Timer, Profile. Projects and the Weekly Review moved to Todoist and Akiflow, where those jobs live now.\n- **Today is one surface.** The moment switcher is gone; the day view with your meetings, diary and agenda is always on, with Notes and Close the day one tap away at the bottom.\n- **Triage, two ways.** Cards for context: swipe right to Keep, left to Reject, tap to edit, with Keep / Reference / Reject buttons under every card showing Kara's Focus or Admin chip, Key nomination and proposed project. Or flip to List and clear the queue between meetings with the same swipes.\n- **Keep hands off cleanly.** A kept task lands in the Todoist Inbox without the buffer label, ready for the agent's enrichment and tomorrow's Akiflow planning. Kara never asks when anymore.\n- **Close the day, three verbs.** Done, Tomorrow, or Plan later, plus the note for tomorrow.\n\n<!-- screenshot: iPhone Triage in list mode with a row mid-swipe showing the green Keep -->\n<!-- screenshot: iPhone Today with the Notes and Close the day bar at the bottom -->"
+    },
     {
       "id": "2026-09-20-v0.3.0",
       "version": "0.3.0",
