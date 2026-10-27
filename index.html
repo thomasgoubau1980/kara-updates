@@ -163,9 +163,9 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.3.0</span>
+      <span class="chip">latest: v0.4.0-beta.1</span>
       <span class="chip chip-blue">iPhone &amp; iPad build 24</span>
-      <span>Released 20 September 2026 · desktop updates on next launch; iPad from TestFlight.</span>
+      <span>Released 27 October 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
     <div class="filter" role="radiogroup" aria-label="Release type">
       <label><input type="radio" name="platform" value="all" checked><span>All</span></label>
@@ -173,6 +173,20 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.4.0-BETA.1 · 27 OCT</span></div>
+    <h2>Kara reads your Akiflow plan, keeps notes on each meeting, and listens</h2>
+    <p class="sec-sub">A test build of Day Companion v2, for trying it out on your own Macs before the full release. Slices 1 and 2 of the build are in; meeting details, today's 3 and Review come next.</p>
+    <p>Known gaps in this beta: typing on the same meeting on two Macs at the same moment can lose lines, and the iPhone and iPad apps still use the old flow.</p>
+<p>&lt;!-- screenshot: Today desktop with Akiflow blocks and tasks, the meeting notes card and the Task and Note mics --&gt; &lt;!-- screenshot: Meeting mode pinned beside a call --&gt;</p>
+    <div class="notes"><div class="note"><b>Your Akiflow plan on Today.</b><span>Connect Akiflow in Profile and Today shows your Akiflow blocks with the tasks planned inside them, timed tasks, today's any-time tasks and the overdue ones. Tick a task to complete it in Akiflow; the arrow opens it there. Kara rereads Akiflow every minute and when you come back to the window.</span></div>
+<div class="note"><b>Your tasks go to Akiflow.</b><span>Captures, the Task mic, "+" lines in a meeting and the suggestions you keep land in your Akiflow Inbox. Only the team's actions go to Todoist.</span></div>
+<div class="note"><b>Notes belong to the meeting.</b><span>The notes card shows the live meeting's notes, or the one that just ended. A plain line is a note, "+" is a task for you, "@name" is something you wait on, "!" is a decision. The ⤢ opens the meeting's note full screen.</span></div>
+<div class="note"><b>Meeting mode.</b><span>One button on the live meeting card, or ⌃⌥M from any app, shrinks Kara to a narrow window on the right edge, kept on top, beside the call. Back to Today puts it back.</span></div>
+<div class="note"><b>Two mics.</b><span>Task and Note, next to Capture and in Meeting mode. They use macOS Dictation: your words appear as you speak, and Return saves.</span></div>
+<div class="note"><b>Nothing fails silently.</b><span>A line under the notes says whether your tasks are reaching Akiflow and who carried them last; it turns red when nothing is.</span></div></div>
+  </section>
 
   <section data-platform="ios">
     <div class="sec-head"><span class="sec-num mono">IPHONE &amp; IPAD BUILD 24 · 21 SEP</span></div>
@@ -758,7 +772,7 @@
 <div class="note"><span>A sync guard stops the Waiting-For list from being overwritten by stale snapshots.</span></div>
 <div class="note"><span>Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda.</span></div></div>
   </section>
-  <footer>generated from docs/updates in kara-desktop · 2026-09-21</footer>
+  <footer>generated from docs/updates in kara-desktop · 2026-10-27</footer>
 </div>
 <script>
 (function () {
