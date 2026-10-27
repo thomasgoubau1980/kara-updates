@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-10-27T11:02:58.360Z",
+  "generatedAt": "2026-10-27T11:41:31.880Z",
   "entries": [
+    {
+      "id": "2026-10-27-v0.4.0-beta.8",
+      "version": "0.4.0-beta.8",
+      "date": "2026-10-27",
+      "platform": "desktop",
+      "title": "Add a note to anything on your agenda, and open it full screen",
+      "body": "- **+ Note everywhere.** Every item in Schedule (a meeting, an Akiflow block, a timed task) shows its notes and a + Note. Write a line, a \"+\" task, an \"@\" waiting-for or a \"!\" decision, press Return, and the field closes. Esc cancels.\n- **The Day view too.** A click on any block opens its peek: its tasks, its notes, + Note and Focus. Blocks with notes show a small count.\n- **Full screen for any item.** The ⤢ on an item opens just that item and its notes, and for an Akiflow block its tasks, with nothing else from the day. Esc brings the day back.\n\n<!-- screenshot: a Schedule card with its notes and + Note -->\n<!-- screenshot: an item full screen -->"
+    },
     {
       "id": "2026-10-27-v0.4.0-beta.7",
       "version": "0.4.0-beta.7",
