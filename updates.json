@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-10-27T08:28:31.213Z",
+  "generatedAt": "2026-10-27T09:18:52.062Z",
   "entries": [
+    {
+      "id": "2026-10-27-v0.4.0-beta.2",
+      "version": "0.4.0-beta.2",
+      "date": "2026-10-27",
+      "platform": "desktop",
+      "title": "Your day as one notebook page, a day note, and a note on anything",
+      "body": "The second test build of Day Companion v2, from the first days of use.\n\n- **A day note.** One page for the day where you drop thoughts as they come; each line gets its time in the margin. When no meeting is live, the notes card and the Note mic write into it. A \"+\" line still becomes a task in Akiflow.\n- **A note on any agenda item.** Meetings, Akiflow focus and admin blocks and timed tasks can all take a note, with the same + / @ / ! lines.\n- **Agenda or Notes.** Today has a switch in its header. Notes reads the day as one page: the day note first, then each item under a thin line with its time, name and source, holding your notes, the Fathom or Granola summary, the tasks and the decision. An index on the side jumps to any item; the three journal questions close the page.\n- **Review is in the menu.** The Close the day button left Today; Review sits in the sidebar, open any time.\n- **Kara counts what you use.** Profile has a Usage card: which features you used in the last 7 days and which you did not, each tied to its story. Only feature names and counts, never what you write. One switch turns it off.\n\n<!-- screenshot: Today in Notes view with the day note, a meeting section and the index -->\n<!-- screenshot: Profile, the Usage card -->"
+    },
     {
       "id": "2026-10-27-v0.4.0-beta.1",
       "version": "0.4.0-beta.1",
