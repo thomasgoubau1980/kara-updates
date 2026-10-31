@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-10-30T06:36:37.818Z",
+  "generatedAt": "2026-10-31T15:48:59.322Z",
   "entries": [
+    {
+      "id": "2026-10-31-v0.4.0-beta.16",
+      "version": "0.4.0-beta.16",
+      "date": "2026-10-31",
+      "platform": "desktop",
+      "title": "Your projects and their next actions, on one list",
+      "body": "\"Projects\" is new in the sidebar. It shows every active project from your Notion as a card with its next actions. Nothing else: a project, and what moves it forward.\n\n- **Connect Notion once.** The first time, Projects asks you to connect your Notion. It's also in Settings.\n- **Add a next action.** Type under a project and press Enter. It's saved in Notion with the project's code, lands in your Akiflow Inbox within a few minutes, and Kara files it under the Akiflow project with the same name or code. A small \"to Akiflow\" dot shows until it has arrived.\n- **Tick it off here or in Akiflow.** It's done in both. Undo is there for a few seconds.\n- **No next action is fine.** Such a project gets a small \"no next action\" flag, nothing more. Some weeks a project just waits.\n- **Later, Done or Drop** from the ••• on a project. Done and Drop ask once when next actions are still open, then offer Undo. Later projects are folded at the bottom, with \"Make active\".\n- **+ New project.** Just a name: Kara makes the code and creates it in Notion as Active. If Akiflow has no project with that name yet, Kara says so once, with a \"Copy name\" button.\n- **When Notion doesn't answer,** your last list stays on screen and new next actions wait and are sent once it's back.\n\nClicking a project's name opens it in Notion for now. A project page with notes and linked material comes next, after a look at Paper."
+    },
     {
       "id": "2026-10-30-v0.4.0-beta.15",
       "version": "0.4.0-beta.15",
