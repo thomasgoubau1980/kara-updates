@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-10-31T16:41:22.346Z",
+  "generatedAt": "2026-11-01T08:25:45.372Z",
   "entries": [
+    {
+      "id": "2026-11-01-v0.4.0-beta.18",
+      "version": "0.4.0-beta.18",
+      "date": "2026-11-01",
+      "platform": "desktop",
+      "title": "Connecting Notion works again, and Notion shows in the sidebar",
+      "body": "Connecting Notion could stop with \"OAuth state mismatch\". It happened when you approved Kara in a Notion tab from an earlier try. Kara now accepts the approval from any Notion tab you opened since it started, so it no longer matters which one you use.\n\n- **Never stuck waiting.** While Kara waits for Notion, \"Open Notion again\" opens a fresh tab, on Projects and in Settings.\n- **Notion in the connections list.** The bottom of the sidebar now shows Notion next to Akiflow, Todoist and Google Calendar: off, the time your projects were last read, or \"error\" with the reason when you hover."
+    },
     {
       "id": "2026-10-31-v0.4.0-beta.17",
       "version": "0.4.0-beta.17",

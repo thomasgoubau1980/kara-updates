@@ -163,9 +163,9 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.4.0-beta.17</span>
+      <span class="chip">latest: v0.4.0-beta.18</span>
       <span class="chip chip-blue">iPhone &amp; iPad build 24</span>
-      <span>Released 31 October 2026 · desktop updates on next launch; iPad from TestFlight.</span>
+      <span>Released 1 November 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
     <div class="filter" role="radiogroup" aria-label="Release type">
       <label><input type="radio" name="platform" value="all" checked><span>All</span></label>
@@ -173,6 +173,15 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.4.0-BETA.18 · 1 NOV</span></div>
+    <h2>Connecting Notion works again, and Notion shows in the sidebar</h2>
+    <p class="sec-sub">Connecting Notion could stop with "OAuth state mismatch". It happened when you approved Kara in a Notion tab from an earlier try. Kara now accepts the approval from any Notion tab you opened since it started, so it no longer matters which one you use.</p>
+    
+    <div class="notes"><div class="note"><b>Never stuck waiting.</b><span>While Kara waits for Notion, "Open Notion again" opens a fresh tab, on Projects and in Settings.</span></div>
+<div class="note"><b>Notion in the connections list.</b><span>The bottom of the sidebar now shows Notion next to Akiflow, Todoist and Google Calendar: off, the time your projects were last read, or "error" with the reason when you hover.</span></div></div>
+  </section>
 
   <section data-platform="desktop">
     <div class="sec-head"><span class="sec-num mono">V0.4.0-BETA.17 · 31 OCT</span></div>
@@ -963,7 +972,7 @@
 <div class="note"><span>A sync guard stops the Waiting-For list from being overwritten by stale snapshots.</span></div>
 <div class="note"><span>Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda.</span></div></div>
   </section>
-  <footer>generated from docs/updates in kara-desktop · 2026-10-31</footer>
+  <footer>generated from docs/updates in kara-desktop · 2026-11-01</footer>
 </div>
 <script>
 (function () {
