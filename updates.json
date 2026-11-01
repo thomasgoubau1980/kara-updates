@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-01T10:38:31.424Z",
+  "generatedAt": "2026-11-01T11:06:35.417Z",
   "entries": [
+    {
+      "id": "2026-11-01-v0.4.0-beta.22",
+      "version": "0.4.0-beta.22",
+      "date": "2026-11-01",
+      "platform": "desktop",
+      "title": "Delete a note you made, with Undo",
+      "body": "A note you created can now be deleted. Before, a page could only be closed, and it stayed in Notes.\n\n- **Where.** On a project's page, each note has \"Delete\" next to \"Open\". In the paper, an open page has \"Delete\" in its top bar.\n- **Undo.** The note goes at once, and \"Undo\" shows for 8 seconds to bring it back exactly as it was.\n- **Notion follows.** A few seconds later, the note's copy in your Notion Notes database goes to Notion's trash, where you can still restore it for 30 days.\n- **What stays.** Next actions and tasks already sent from the note's \"+ \" lines are kept.\n\nOnly notes you made can be deleted: project notes and pages. A meeting's note and the day note belong to the meeting or the day; clear their text instead.\n\nThe Undo bar also shows on top of the paper now; before, the paper could hide it."
+    },
     {
       "id": "2026-11-01-v0.4.0-beta.21",
       "version": "0.4.0-beta.21",
