@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-01T09:03:03.269Z",
+  "generatedAt": "2026-11-01T10:38:31.424Z",
   "entries": [
+    {
+      "id": "2026-11-01-v0.4.0-beta.21",
+      "version": "0.4.0-beta.21",
+      "date": "2026-11-01",
+      "platform": "desktop",
+      "title": "Next actions reach Notion, each on its own project",
+      "body": "Your projects loaded, but a new next action failed with \"Invalid agent URL\", and one action showed under every project. Notion changed two formats, and Kara now follows both.\n\n- **Next actions save in Notion.** Notion now expects a person in a new form. Kara sends you as the assignee that way, so the action lands in your Next Actions.\n- **Each project keeps its own actions.** Notion now gives page links on app.notion.com. Kara only read the old notion.so links, so every project looked like the same one. Both link forms work now.\n- **A shorter error.** When Notion refuses something, the banner shows only Notion's sentence, not the raw reply.\n\nAn action you added before this update (like \"finish presentation\") was saved without a project. It goes to your Next Actions in Notion with no project: file it there, or delete it and add it again in Kara."
+    },
     {
       "id": "2026-11-01-v0.4.0-beta.20",
       "version": "0.4.0-beta.20",
