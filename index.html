@@ -163,7 +163,7 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.4.0-beta.19</span>
+      <span class="chip">latest: v0.4.0-beta.20</span>
       <span class="chip chip-blue">iPhone &amp; iPad build 24</span>
       <span>Released 1 November 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
@@ -173,6 +173,14 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.4.0-BETA.20 · 1 NOV</span></div>
+    <h2>Your Notion projects load again</h2>
+    <p class="sec-sub">Notion was connected, but your projects never appeared: Notion refused every read with "Invalid Origin: localhost". Kara's app shell labelled its requests as coming from a local web page, and Notion's project server doesn't accept those.</p>
+    <p>Kara now sends its Notion requests the way a server app does, so your projects and next actions load. No need to connect again. Other services are unchanged.</p>
+    
+  </section>
 
   <section data-platform="desktop">
     <div class="sec-head"><span class="sec-num mono">V0.4.0-BETA.19 · 1 NOV</span></div>
