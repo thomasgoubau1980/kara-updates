@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-04T04:15:02.575Z",
+  "generatedAt": "2026-11-04T04:23:41.576Z",
   "entries": [
+    {
+      "id": "2026-11-04-v0.4.0-beta.24",
+      "version": "0.4.0-beta.24",
+      "date": "2026-11-04",
+      "platform": "desktop",
+      "title": "The user guide's Agent Hub link opens the guide",
+      "body": "In Settings › User guide, \"Open on the Agent Hub\" opened a page that doesn't exist. It now opens the guide on the Agent Hub, the same text you read in Kara."
+    },
     {
       "id": "2026-11-04-v0.4.0-beta.23",
       "version": "0.4.0-beta.23",
