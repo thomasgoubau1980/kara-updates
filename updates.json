@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-01T11:06:35.417Z",
+  "generatedAt": "2026-11-04T04:15:02.575Z",
   "entries": [
+    {
+      "id": "2026-11-04-v0.4.0-beta.23",
+      "version": "0.4.0-beta.23",
+      "date": "2026-11-04",
+      "platform": "desktop",
+      "title": "Describe each project, and read the user guide inside Kara",
+      "body": "Each project now has a description, and the user guide lives in the app next to the release notes.\n\n- **A description on every project.** A project's page opens with Description: a few lines on what the project is and why it matters. Write it right there; Kara saves it in the project's Objective field in Notion, so it also shows in Notion, and anything written there shows in Kara.\n- **The user guide, inside Kara.** Settings now has \"User guide\" next to \"See all updates\", and the Updates screen has it at the top. The guide covers today's Kara end to end: Today, the paper, meetings, Projects and project pages, Review, Days, Triage and Timer. A side index jumps to any section.\n- **One guide, everywhere.** The guide ships with the app, so it matches the version you run and reads offline. The Agent Hub publishes the same text.\n\n<!-- screenshot: Mac, a project page with the Description box on top -->\n<!-- screenshot: Mac, Settings > User guide on the Projects section -->"
+    },
     {
       "id": "2026-11-01-v0.4.0-beta.22",
       "version": "0.4.0-beta.22",
