@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-04T04:23:41.576Z",
+  "generatedAt": "2026-11-11T05:57:33.083Z",
   "entries": [
+    {
+      "id": "2026-11-11-v0.4.0-beta.25",
+      "version": "0.4.0-beta.25",
+      "date": "2026-11-11",
+      "platform": "desktop",
+      "title": "One Day page for every day",
+      "body": "Today, Days, Triage, Review, Timer and the paper are now one page: the Day page. It looks the same for today and for any day you go back to.\n\n- **The day at a glance.** Today's 3 at the top, then your day as a compact list, a detailed list or a calendar. Akiflow blocks carry their timers.\n- **Meetings open in place.** Tap a meeting to see its notes, decisions and tasks without leaving the day.\n- **The day's note.** Write on the day itself, open it as a full page, and add attachments.\n- **The day in short.** Kara gathers the decisions and new tasks from your meetings and notes.\n- **Find your way.** Tap the date for a month picker, or search every day Kara knows with the magnifier, ⌘K or /.\n- **Recurring meetings.** Each one has its own page: every meeting, a decision log, and the tasks still open across the series.\n- **Projects and the weekly review.** Your Notion projects are on the Day page, with a weekly review that walks through them one by one.\n\nThe same build is on TestFlight for iPhone and iPad (build 28)."
+    },
     {
       "id": "2026-11-04-v0.4.0-beta.24",
       "version": "0.4.0-beta.24",
