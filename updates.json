@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-11T13:27:04.376Z",
+  "generatedAt": "2026-11-11T14:51:21.246Z",
   "entries": [
+    {
+      "id": "2026-11-11-v0.4.0-beta.29",
+      "version": "0.4.0-beta.29",
+      "date": "2026-11-11",
+      "platform": "desktop",
+      "title": "Your notes now feel like your own notebook",
+      "body": "Kara's notes look and feel like paper: a handwriting font you choose, lines, squares or dots, and real formatting instead of symbols.\n\n- **Eight fonts.** Tap Aa in a note's top row and pick one: Patrick Hand, Kalam, Caveat, Dancing Script, Kaushan Script, Amatic SC, Homemade Apple or the system font. Small, medium or large. For one note, or turn on \"Use for all notes\".\n- **Plain, lines, squares or dots.** The full page and Meeting mode use the page you choose; the small notes stay plain.\n- **Formatting you can see.** A title, bullets, numbered lists, checklist items with a box to tick, bold, italic, underline, strike through, highlight and a hand-drawn circle. No stars or symbols in your notes any more. Typing \"- \", \"1. \", \"# \" or \"[ ] \" at the start of a line works too.\n- **The format bar.** On the iPhone and iPad it sits above the keyboard while you write. On the Mac it appears over the text you select. Highlight and circle the same words if you like.\n- **Your line rules stay.** \"+ \" is still a task for Akiflow (sent as plain words, without the formatting), \"@name\" still waiting for, \"! \" still a decision. A checklist item stays in the note.\n\nStill to come: Apple's own Pencil tools for drawing on the iPad and iPhone.\n\nThe same build is on TestFlight for iPhone and iPad (build 32)."
+    },
     {
       "id": "2026-11-11-v0.4.0-beta.28",
       "version": "0.4.0-beta.28",
