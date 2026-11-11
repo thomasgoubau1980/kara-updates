@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-11T05:57:33.083Z",
+  "generatedAt": "2026-11-11T06:30:39.743Z",
   "entries": [
+    {
+      "id": "2026-11-11-v0.4.0-beta.26",
+      "version": "0.4.0-beta.26",
+      "date": "2026-11-11",
+      "platform": "desktop",
+      "title": "Past days look like today, and a meeting opens as a note",
+      "body": "- **Past days look like today.** Go back to any day and you get the same Day page, with Compact, Detailed and Calendar. Its meetings open in place with their recaps, Today's 3 shows how each ended, and below the day you see what was done and what was planned but not done.\n- **A meeting opens as a note.** Tap a meeting and its notes are a yellow note, the same as the day's: bold and lists, a voice note, say a task, attachments, and its tasks for Akiflow. Notes you already wrote on it carry over.\n- **Kara tells you when it is signed out of the Kara cloud.** Without it, meeting recaps from Fathom and Granola and notes from your other devices don't arrive. A red line on the Day page now says so, with Sign in.\n- **No more Behind list at the top.** Late tasks belong in your Akiflow sweep, not in Kara.\n\nThe same build is on TestFlight for iPhone and iPad (build 29)."
+    },
     {
       "id": "2026-11-11-v0.4.0-beta.25",
       "version": "0.4.0-beta.25",
