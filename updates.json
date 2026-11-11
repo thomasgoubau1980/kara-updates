@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-11T13:15:47.729Z",
+  "generatedAt": "2026-11-11T13:27:04.376Z",
   "entries": [
+    {
+      "id": "2026-11-11-v0.4.0-beta.28",
+      "version": "0.4.0-beta.28",
+      "date": "2026-11-11",
+      "platform": "desktop",
+      "title": "Meeting summaries on your day read like the open meeting",
+      "body": "In the Detailed view, a meeting's Fathom or Granola summary showed as one long block, its headings and bullets run together. It now reads like the open meeting: a short recap, the decisions, and the detailed outline folded away until you open it. Recordings that are not on your calendar show the same way in both views.\n\nThe same build is on TestFlight for iPhone and iPad (build 31)."
+    },
     {
       "id": "2026-11-11-v0.4.0-beta.27",
       "version": "0.4.0-beta.27",
