@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-20T16:02:07.126Z",
+  "generatedAt": "2026-11-22T10:46:42.453Z",
   "entries": [
+    {
+      "id": "2026-11-22-v0.4.0-beta.35",
+      "version": "0.4.0-beta.35",
+      "date": "2026-11-22",
+      "platform": "desktop",
+      "title": "The iPad keyboard comes up, and lists within lists",
+      "body": "- **The keyboard comes up on the iPad.** A new note, or a tap on a note that already had the cursor, sometimes gave a blinking cursor and no keyboard. Now a tap on New note or anywhere on the paper brings the keyboard up, and the keyboard button says \"Write\" whenever the keyboard is down, also with a trackpad attached. With a Magic Keyboard attached, you type on it and the format bar stays at the bottom.\n- **Lists within lists, three levels deep.** Bullets, numbered lists and checklists can have a sub-list and a sub-sub-list. Press Tab to move an item in and Shift+Tab to move it out, or use the two new buttons in the format bar on the iPhone and iPad. Each level has its own bullet, as in Notes: a dot, a circle, a small square. Return on an empty sub-item steps back one level.\n\nThe same build is on TestFlight for iPhone and iPad (build 38)."
+    },
     {
       "id": "2026-11-20-v0.4.0-beta.34",
       "version": "0.4.0-beta.34",

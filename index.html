@@ -163,9 +163,9 @@
     <h1>Kara Updates</h1>
     <p class="lede">What shipped, newest first. Desktop apps offer each release themselves with a one-click "Update &amp; restart" dialog; iPhone and iPad builds arrive via TestFlight.</p>
     <div class="update-strip">
-      <span class="chip">latest: v0.4.0-beta.34</span>
+      <span class="chip">latest: v0.4.0-beta.35</span>
       <span class="chip chip-blue">iPhone &amp; iPad build 24</span>
-      <span>Released 20 November 2026 · desktop updates on next launch; iPad from TestFlight.</span>
+      <span>Released 22 November 2026 · desktop updates on next launch; iPad from TestFlight.</span>
     </div>
     <div class="filter" role="radiogroup" aria-label="Release type">
       <label><input type="radio" name="platform" value="all" checked><span>All</span></label>
@@ -173,6 +173,15 @@
       <label><input type="radio" name="platform" value="ios"><span>iPad &amp; iPhone</span></label>
     </div>
   </header>
+
+  <section data-platform="desktop">
+    <div class="sec-head"><span class="sec-num mono">V0.4.0-BETA.35 · 22 NOV</span></div>
+    <h2>The iPad keyboard comes up, and lists within lists</h2>
+    <p class="sec-sub">The same build is on TestFlight for iPhone and iPad (build 38).</p>
+    
+    <div class="notes"><div class="note"><b>The keyboard comes up on the iPad.</b><span>A new note, or a tap on a note that already had the cursor, sometimes gave a blinking cursor and no keyboard. Now a tap on New note or anywhere on the paper brings the keyboard up, and the keyboard button says "Write" whenever the keyboard is down, also with a trackpad attached. With a Magic Keyboard attached, you type on it and the format bar stays at the bottom.</span></div>
+<div class="note"><b>Lists within lists, three levels deep.</b><span>Bullets, numbered lists and checklists can have a sub-list and a sub-sub-list. Press Tab to move an item in and Shift+Tab to move it out, or use the two new buttons in the format bar on the iPhone and iPad. Each level has its own bullet, as in Notes: a dot, a circle, a small square. Return on an empty sub-item steps back one level.</span></div></div>
+  </section>
 
   <section data-platform="desktop">
     <div class="sec-head"><span class="sec-num mono">V0.4.0-BETA.34 · 20 NOV</span></div>
@@ -1140,7 +1149,7 @@
 <div class="note"><span>A sync guard stops the Waiting-For list from being overwritten by stale snapshots.</span></div>
 <div class="note"><span>Google Calendar on desktop moved to a proper PKCE loopback OAuth flow, with event fetch and the merged Today agenda.</span></div></div>
   </section>
-  <footer>generated from docs/updates in kara-desktop · 2026-11-20</footer>
+  <footer>generated from docs/updates in kara-desktop · 2026-11-22</footer>
 </div>
 <script>
 (function () {
